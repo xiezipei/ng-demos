@@ -6,12 +6,26 @@
 ng new demo-01
 ```
 
-了解页面上 Resource 和 Next Steps 显示信息
+从 Resource、Next Steps 了解相关信息
 
 ## demo-02 - hello-world
 
 ```sh
-ng new demo-01
+ng new demo-02
 ```
 
-空白页面显示 `Hello World！`
+从零开始显示 `Hello World！`
+
+## demo-03 - quick-start
+
+```sh
+ng new demo-03
+```
+
+快速了解基本知识：目录结构、数据渲染、循环渲染列表、条件判断、事件绑定
+
+## demo-04 - ?
+
+```sh
+ng new demo-04
+```
