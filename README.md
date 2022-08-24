@@ -6,7 +6,8 @@
 ng new demo-01
 ```
 
-从 Resource、Next Steps 了解相关信息
+1. 保持原版，new 完后不作任何改动
+2. 从 Resource、Next Steps 了解相关信息
 
 ## demo-02 - hello-world
 
