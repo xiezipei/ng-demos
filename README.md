@@ -1,32 +1,26 @@
 # ng-demos
 
-## demo-01 - my-app
+## demo-01
 
 ```sh
 ng new demo-01
 ```
 
-1. 保持原版，new 完后不作任何改动
-2. 从 Resource、Next Steps 了解相关信息
+不作改动，作为原版用来对比
 
-## demo-02 - hello-world
+## demo-02
 
 ```sh
 ng new demo-02
 ```
 
-从零开始显示 `Hello World！`
+尽可能删除多余文件、代码，用于从零开始展示 helloworld
 
-## demo-03 - quick-start
+## demo-03
 
 ```sh
 ng new demo-03
 ```
 
-快速了解基本知识：目录结构、数据渲染、循环渲染列表、条件判断、事件绑定
+快速了解基本知识：数据渲染、循环渲染列表、条件判断、事件绑定
 
-## demo-04 - ?
-
-```sh
-ng new demo-04
-```
