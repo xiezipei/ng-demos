@@ -1,2 +1,11 @@
 <!-- 示例 1:数据渲染 -->
 <div>{{ message }}</div>
+
+<!-- 示例 2:循环渲染列表 -->
+<ul>
+  <li *ngFor="let item of items">{{ item.id }} - {{ item.name }}</li>
+</ul>
+
+<!-- 示例 3:循条件判断与事件绑定 -->
+<button (click)="showVersion()">显示</button>
+<div *ngIf="isShow">Angular Version: {{ version.full }}</div>
