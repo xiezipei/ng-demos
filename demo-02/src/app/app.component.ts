@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'Hello World!';
+  // 示例 1:数据渲染
+  message = 'Hello Angular!';
 }
