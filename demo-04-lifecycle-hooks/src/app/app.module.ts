@@ -28,10 +28,7 @@ import { SpyParentComponent } from './spy.component';
 import { SpyDirective } from './spy.directive';
 
 @NgModule({
-  imports: [
-    BrowserModule,
-    FormsModule
-  ],
+  imports: [BrowserModule, FormsModule],
   declarations: [
     AppComponent,
     AfterContentParentComponent,
@@ -49,8 +46,8 @@ import { SpyDirective } from './spy.directive';
     PeekABooParentComponent,
     PeekABooComponent,
     SpyParentComponent,
-    SpyDirective
+    SpyDirective,
   ],
-  bootstrap: [ AppComponent ]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
