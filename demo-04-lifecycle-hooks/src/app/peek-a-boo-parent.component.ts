@@ -22,10 +22,16 @@ import { LoggerService } from './logger.service';
         <peek-a-boo *ngIf="hasChild" [name]="heroName"></peek-a-boo>
         <!-- 日志信息 -->
         <h3>Lifecycle Hook Log</h3>
-        <div *ngFor="let msg of hookLog" class="log">{{ msg }}</div>
+        <div *ngFor="let msg of hookLog" class="log {{ getClassByMsg(msg) }}">
+          {{ msg }}
+        </div>
       </div>
     </div>
   `,
+  styles: [
+    '.bg-red {background:red;color:white;margin-bottom:4px;};',
+    '.bg-green {background:#00b156;color:white;margin-bottom:4px;};',
+  ],
   providers: [LoggerService],
 })
 export class PeekABooParentComponent {
@@ -59,5 +65,29 @@ export class PeekABooParentComponent {
   updateHero() {
     this.heroName += '!';
     this.logger.tick();
+  }
+
+  /**
+   * 根据消息获取 class
+   */
+  getClassByMsg(msg: string) {
+    if (
+      msg.indexOf('name is') !== -1 ||
+      msg.indexOf('OnInit') !== -1 ||
+      msg.indexOf('AfterContentInit') !== -1 ||
+      msg.indexOf('AfterViewInit') !== -1 ||
+      msg.indexOf('OnDestroy') !== -1
+    ) {
+      return 'bg-red';
+    }
+    if (
+      msg.indexOf('OnChanges') !== -1 ||
+      msg.indexOf('DoCheck') !== -1 ||
+      msg.indexOf('AfterContentChecked') !== -1 ||
+      msg.indexOf('AfterViewChecked') !== -1
+    ) {
+      return 'bg-green';
+    }
+    return '';
   }
 }
