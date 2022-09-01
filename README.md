@@ -25,3 +25,23 @@
 ## demo-05-view-encapsulation
 
 视图封装
+
+## demo-06-component-interaction
+
+组件交互
+
+## demo-07-inputs-outputs
+
+在父子指令及组件之间共享数据
+
+## demo-08-content-projection
+
+内容投影
+
+## demo-09-dynamic-component-loader
+
+动态组件
+
+## demo-10-elements
+
+Angular 元素
