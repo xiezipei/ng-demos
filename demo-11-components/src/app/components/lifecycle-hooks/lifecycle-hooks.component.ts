@@ -5,6 +5,7 @@ import {
   AfterViewInit,
   Component,
   DoCheck,
+  Input,
   OnChanges,
   OnDestroy,
   OnInit,
@@ -28,6 +29,8 @@ export class LifecycleHooksComponent
     AfterViewChecked,
     OnDestroy
 {
+  @Input() count: number = 0;
+
   constructor() {
     log('constructor');
   }

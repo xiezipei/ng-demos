@@ -1,4 +1,9 @@
-<button (click)="isShowLifecycleHook = !isShowLifecycleHook">
-  生命周期钩子
-</button>
-<app-lifecycle-hooks *ngIf="isShowLifecycleHook"></app-lifecycle-hooks>
+<div>
+  <button (click)="updateCount()">改变名称</button>
+  <button (click)="showLifecycleHook()">生命周期钩子</button>
+</div>
+
+<app-lifecycle-hooks
+  *ngIf="isShowLifecycleHook"
+  [count]="count"
+></app-lifecycle-hooks>

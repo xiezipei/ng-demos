@@ -7,5 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'demo-11-components';
+  count = 0;
   isShowLifecycleHook: boolean = false;
+
+  updateCount() {
+    this.count = this.count + 1;
+  }
+
+  showLifecycleHook() {
+    this.isShowLifecycleHook = !this.isShowLifecycleHook;
+    if (!this.isShowLifecycleHook) {
+      this.count = 0;
+    }
+  }
 }
