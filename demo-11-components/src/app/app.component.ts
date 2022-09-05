@@ -11,7 +11,9 @@ export class AppComponent {
   isShowLifecycleHook: boolean = false;
 
   updateCount() {
-    this.count = this.count + 1;
+    if (this.isShowLifecycleHook) {
+      this.count = this.count + 1;
+    }
   }
 
   showLifecycleHook() {
