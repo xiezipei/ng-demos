@@ -41,7 +41,7 @@ export class PeekABooComponent
     super(logger);
 
     const is = this.name ? 'is' : 'is not';
-    this.logIt(`name ${is} known at construction`);
+    this.logIt(`Constructor: name ${is} known at construction`);
   }
 
   // only called for/if there is an @input variable set by parent.
