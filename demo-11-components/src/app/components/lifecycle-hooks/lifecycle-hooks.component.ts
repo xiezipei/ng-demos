@@ -32,38 +32,38 @@ export class LifecycleHooksComponent
   @Input() count: number = 0;
 
   constructor() {
-    log('constructor');
-  }
-
-  ngDoCheck(): void {
-    log('ngDoCheck');
-  }
-
-  ngAfterContentInit(): void {
-    log('ngAfterContentInit');
-  }
-
-  ngAfterContentChecked(): void {
-    log('ngAfterContentChecked');
-  }
-
-  ngAfterViewInit(): void {
-    log('ngAfterViewInit');
-  }
-
-  ngAfterViewChecked(): void {
-    log('ngAfterViewChecked');
-  }
-
-  ngOnDestroy(): void {
-    log('ngOnDestroy');
+    log('constructor', 0);
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    log('changes');
+    log('changes', 1);
   }
 
   ngOnInit(): void {
-    log('ngOnInit');
+    log('ngOnInit', 0);
+  }
+
+  ngDoCheck(): void {
+    log('ngDoCheck', 1);
+  }
+
+  ngAfterContentInit(): void {
+    log('ngAfterContentInit', 0);
+  }
+
+  ngAfterContentChecked(): void {
+    log('ngAfterContentChecked', 1);
+  }
+
+  ngAfterViewInit(): void {
+    log('ngAfterViewInit', 0);
+  }
+
+  ngAfterViewChecked(): void {
+    log('ngAfterViewChecked', 1);
+  }
+
+  ngOnDestroy(): void {
+    log('ngOnDestroy', 0);
   }
 }

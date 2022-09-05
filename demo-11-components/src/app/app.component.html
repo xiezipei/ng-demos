@@ -1,6 +1,8 @@
 <div>
   <button (click)="updateCount()">改变名称</button>
-  <button (click)="showLifecycleHook()">生命周期钩子</button>
+  <button (click)="showLifecycleHook()">
+    {{ isShowLifecycleHook ? "隐藏" : "显示" }}
+  </button>
 </div>
 
 <app-lifecycle-hooks
