@@ -1,11 +1,21 @@
 <div>
-  <button (click)="updateCount()">改变名称</button>
   <button (click)="showLifecycleHook()">
     {{ isShowLifecycleHook ? "隐藏" : "显示" }}
   </button>
+  <ng-container *ngIf="isShowLifecycleHook">
+    <button (click)="updateCount()">改变名称</button>
+    <button (click)="updateHero()">改变 hero</button>
+    <button (click)="resetHero()">重制 hero</button>
+    <div *ngIf="hero">
+      <p>name：<input type="text" [(ngModel)]="hero.name" /></p>
+      <p>age：<input type="text" [(ngModel)]="hero.age" /></p>
+    </div>
+  </ng-container>
 </div>
-
-<app-lifecycle-hooks
-  *ngIf="isShowLifecycleHook"
-  [count]="count"
-></app-lifecycle-hooks>
+<div style="border: 1px solid #ccc; padding: 8px 16px; margin-top: 16px">
+  <app-lifecycle-hooks
+    *ngIf="isShowLifecycleHook"
+    [count]="count"
+    [person]="hero"
+  ></app-lifecycle-hooks>
+</div>

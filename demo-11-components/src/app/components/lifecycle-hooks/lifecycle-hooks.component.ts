@@ -13,6 +13,11 @@ import {
 } from '@angular/core';
 import { log } from 'src/app/shared/utils';
 
+export interface Person {
+  name: string;
+  age: number;
+}
+
 @Component({
   selector: 'app-lifecycle-hooks',
   templateUrl: './lifecycle-hooks.component.html',
@@ -30,6 +35,10 @@ export class LifecycleHooksComponent
     OnDestroy
 {
   @Input() count: number = 0;
+  @Input() person: null | Person = {
+    name: 'Tom',
+    age: 18,
+  };
 
   constructor() {
     log('constructor', 0);

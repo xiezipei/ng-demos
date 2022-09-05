@@ -9,11 +9,13 @@ export class AppComponent {
   title = 'demo-11-components';
   count = 0;
   isShowLifecycleHook: boolean = false;
+  hero: null | { name: string; age: number } = {
+    name: 'Tom',
+    age: 18,
+  };
 
   updateCount() {
-    if (this.isShowLifecycleHook) {
-      this.count = this.count + 1;
-    }
+    this.count = this.count + 1;
   }
 
   showLifecycleHook() {
@@ -21,5 +23,16 @@ export class AppComponent {
     if (!this.isShowLifecycleHook) {
       this.count = 0;
     }
+  }
+
+  updateHero() {
+    this.hero = null;
+  }
+
+  resetHero() {
+    this.hero = {
+      name: 'Tom',
+      age: 18,
+    };
   }
 }
