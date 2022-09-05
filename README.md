@@ -24,24 +24,36 @@
 
 ## demo-05-view-encapsulation
 
+pnpm
+
 视图封装
 
 ## demo-06-component-interaction
+
+pnpm
 
 组件交互
 
 ## demo-07-inputs-outputs
 
+pnpm
+
 在父子指令及组件之间共享数据
 
 ## demo-08-content-projection
+
+pnpm
 
 内容投影
 
 ## demo-09-dynamic-component-loader
 
+pnpm
+
 动态组件
 
 ## demo-10-elements
+
+pnpm
 
 Angular 元素
