@@ -7,9 +7,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LifecycleHooksComponent } from './components/lifecycle-hooks/lifecycle-hooks.component';
 import { LifecycleHooksParentComponent } from './components/lifecycle-hooks-parent/lifecycle-hooks-parent.component';
+import { ViewEncapsulationComponent } from './components/view-encapsulation/view-encapsulation.component';
+import { NoEncapsulationComponent } from './components/view-encapsulation/no-encapsulation/no-encapsulation.component';
+import { EmulatedEncapsulationComponent } from './components/view-encapsulation/emulated-encapsulation/emulated-encapsulation.component';
+import { ShadowDomEncapsulationComponent } from './components/view-encapsulation/shadow-dom-encapsulation/shadow-dom-encapsulation.component';
 
 @NgModule({
-  declarations: [AppComponent, LifecycleHooksComponent, LifecycleHooksParentComponent],
+  declarations: [AppComponent, LifecycleHooksComponent, LifecycleHooksParentComponent, ViewEncapsulationComponent, NoEncapsulationComponent, EmulatedEncapsulationComponent, ShadowDomEncapsulationComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
