@@ -6,9 +6,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LifecycleHooksComponent } from './components/lifecycle-hooks/lifecycle-hooks.component';
+import { LifecycleHooksParentComponent } from './components/lifecycle-hooks-parent/lifecycle-hooks-parent.component';
 
 @NgModule({
-  declarations: [AppComponent, LifecycleHooksComponent],
+  declarations: [AppComponent, LifecycleHooksComponent, LifecycleHooksParentComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
