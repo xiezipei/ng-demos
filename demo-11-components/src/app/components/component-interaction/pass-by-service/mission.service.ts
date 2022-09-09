@@ -14,10 +14,12 @@ export class MissionService {
 
   // Service message commands
   announceMission(mission: string) {
+    console.log('this.missionAnnouncedSource', this.missionAnnouncedSource);
     this.missionAnnouncedSource.next(mission);
   }
 
   confirmMission(astronaut: string) {
+    console.log('this.missionConfirmedSource', this.missionConfirmedSource);
     this.missionConfirmedSource.next(astronaut);
   }
 }
