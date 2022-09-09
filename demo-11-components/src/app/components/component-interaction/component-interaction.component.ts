@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { fakeHeros, fakeTitle } from 'src/app/shared/fake-datas';
 import { Hero } from 'src/app/shared/types';
 
 @Component({
@@ -7,11 +8,8 @@ import { Hero } from 'src/app/shared/types';
   styleUrls: ['./component-interaction.component.scss'],
 })
 export class ComponentInteractionComponent implements OnInit {
-  heros: Hero[] = [
-    { name: 'Tom', msg: 'Hi' },
-    { name: 'Tony', msg: 'Hello' },
-    { name: 'Petter', msg: 'Halo' },
-  ];
+  heros: Hero[] = fakeHeros;
+  title: string = fakeTitle;
 
   constructor() {}
 

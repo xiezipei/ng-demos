@@ -8,9 +8,8 @@ describe('PassByInputComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PassByInputComponent ]
-    })
-    .compileComponents();
+      declarations: [PassByInputComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(PassByInputComponent);
     component = fixture.componentInstance;
