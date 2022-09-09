@@ -11,9 +11,10 @@ import { ViewEncapsulationComponent } from './components/view-encapsulation/view
 import { NoEncapsulationComponent } from './components/view-encapsulation/no-encapsulation/no-encapsulation.component';
 import { EmulatedEncapsulationComponent } from './components/view-encapsulation/emulated-encapsulation/emulated-encapsulation.component';
 import { ShadowDomEncapsulationComponent } from './components/view-encapsulation/shadow-dom-encapsulation/shadow-dom-encapsulation.component';
+import { ComponentInteractionComponent } from './components/component-interaction/component-interaction.component';
 
 @NgModule({
-  declarations: [AppComponent, LifecycleHooksComponent, LifecycleHooksParentComponent, ViewEncapsulationComponent, NoEncapsulationComponent, EmulatedEncapsulationComponent, ShadowDomEncapsulationComponent],
+  declarations: [AppComponent, LifecycleHooksComponent, LifecycleHooksParentComponent, ViewEncapsulationComponent, NoEncapsulationComponent, EmulatedEncapsulationComponent, ShadowDomEncapsulationComponent, ComponentInteractionComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
