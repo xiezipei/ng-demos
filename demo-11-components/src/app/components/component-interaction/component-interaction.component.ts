@@ -15,8 +15,19 @@ export class ComponentInteractionComponent implements OnInit {
   noNameHero = noNameHero;
 
   title3: string = '通过 `ngOnChanges()` 来截听输入属性值的变化';
+  major = 1;
+  minor = 23;
 
   constructor() {}
 
   ngOnInit(): void {}
+
+  newMinor() {
+    this.minor++;
+  }
+
+  newMajor() {
+    this.major++;
+    this.minor = 0; // 大版本加一，小版本重置为零
+  }
 }

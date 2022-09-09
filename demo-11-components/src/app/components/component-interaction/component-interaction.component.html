@@ -7,4 +7,10 @@
   [name]="noNameHero.name"
 ></app-pass-by-setter>
 
-<app-pass-by-ngonchanges [title]="title3"></app-pass-by-ngonchanges>
+<button type="button" (click)="newMinor()">New minor version</button>
+<button type="button" (click)="newMajor()">New major version</button>
+<app-pass-by-ngonchanges
+  [title]="title3"
+  [major]="major"
+  [minor]="minor"
+></app-pass-by-ngonchanges>
