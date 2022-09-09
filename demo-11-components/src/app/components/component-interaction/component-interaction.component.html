@@ -24,4 +24,7 @@
 ></app-pass-by-emits>
 
 <h3>{{ title5 }}</h3>
-<app-pass-by-localvar></app-pass-by-localvar>
+<p>火箭发射倒计时：{{ timer.seconds }}</p>
+<button type="button" (click)="timer.start()">Start</button>
+<button type="button" (click)="timer.stop()">Stop</button>
+<app-pass-by-localvar #timer></app-pass-by-localvar>
