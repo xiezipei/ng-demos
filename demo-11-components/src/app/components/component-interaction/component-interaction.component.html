@@ -1,12 +1,15 @@
 <h2>组件交互</h2>
 
+<!-- 示例-1 -->
 <app-pass-by-input [title]="title1" [heroes]="heroes"></app-pass-by-input>
 
+<!-- 示例-2 -->
 <app-pass-by-setter
   [title]="title2"
   [name]="noNameHero.name"
 ></app-pass-by-setter>
 
+<!-- 示例-3 -->
 <button type="button" (click)="newMinor()">New minor version</button>
 <button type="button" (click)="newMajor()">New major version</button>
 <app-pass-by-ngonchanges
@@ -15,6 +18,7 @@
   [minor]="minor"
 ></app-pass-by-ngonchanges>
 
+<!-- 示例-4 -->
 <h3>{{ title4 }}</h3>
 <p>Agree: {{ agreed }}, Disagree: {{ disagreed }}</p>
 <app-pass-by-emits
@@ -23,6 +27,7 @@
   (voted)="onVoted($event)"
 ></app-pass-by-emits>
 
+<!-- 示例-5 -->
 <h3>{{ title5 }}</h3>
 <p>火箭发射倒计时：{{ timer.seconds }}</p>
 <button type="button" (click)="timer.start()">Start</button>

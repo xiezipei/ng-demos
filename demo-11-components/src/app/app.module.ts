@@ -17,9 +17,10 @@ import { PassBySetterComponent } from './components/component-interaction/pass-b
 import { PassByNgonchangesComponent } from './components/component-interaction/pass-by-ngonchanges/pass-by-ngonchanges.component';
 import { PassByEmitsComponent } from './components/component-interaction/pass-by-emits/pass-by-emits.component';
 import { PassByLocalvarComponent } from './components/component-interaction/pass-by-localvar/pass-by-localvar.component';
+import { PassByViewchildComponent } from './components/component-interaction/pass-by-viewchild/pass-by-viewchild.component';
 
 @NgModule({
-  declarations: [AppComponent, LifecycleHooksComponent, LifecycleHooksParentComponent, ViewEncapsulationComponent, NoEncapsulationComponent, EmulatedEncapsulationComponent, ShadowDomEncapsulationComponent, ComponentInteractionComponent, PassByInputComponent, PassBySetterComponent, PassByNgonchangesComponent, PassByEmitsComponent, PassByLocalvarComponent],
+  declarations: [AppComponent, LifecycleHooksComponent, LifecycleHooksParentComponent, ViewEncapsulationComponent, NoEncapsulationComponent, EmulatedEncapsulationComponent, ShadowDomEncapsulationComponent, ComponentInteractionComponent, PassByInputComponent, PassBySetterComponent, PassByNgonchangesComponent, PassByEmitsComponent, PassByLocalvarComponent, PassByViewchildComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
