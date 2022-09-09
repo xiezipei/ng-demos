@@ -14,3 +14,11 @@
   [major]="major"
   [minor]="minor"
 ></app-pass-by-ngonchanges>
+
+<h3>{{ title4 }}</h3>
+<p>Agree: {{ agreed }}, Disagree: {{ disagreed }}</p>
+<app-pass-by-emits
+  *ngFor="let hero of heroes"
+  [name]="hero.name"
+  (voted)="onVoted($event)"
+></app-pass-by-emits>

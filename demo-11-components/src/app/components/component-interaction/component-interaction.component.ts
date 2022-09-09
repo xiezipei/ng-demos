@@ -18,6 +18,10 @@ export class ComponentInteractionComponent implements OnInit {
   major = 1;
   minor = 23;
 
+  title4: string = '父组件监听子组件的事件';
+  agreed = 0;
+  disagreed = 0;
+
   constructor() {}
 
   ngOnInit(): void {}
@@ -29,5 +33,13 @@ export class ComponentInteractionComponent implements OnInit {
   newMajor() {
     this.major++;
     this.minor = 0; // 大版本加一，小版本重置为零
+  }
+
+  onVoted(agreed: boolean) {
+    if (agreed) {
+      this.agreed++;
+    } else {
+      this.disagreed++;
+    }
   }
 }
