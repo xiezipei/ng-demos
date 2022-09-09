@@ -22,6 +22,8 @@ export class ComponentInteractionComponent implements OnInit {
   agreed = 0;
   disagreed = 0;
 
+  title5: string = '父组件与子组件通过本地变量互动';
+
   constructor() {}
 
   ngOnInit(): void {}
