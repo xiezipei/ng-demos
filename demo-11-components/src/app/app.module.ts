@@ -21,6 +21,7 @@ import { PassByViewchildComponent } from './components/component-interaction/pas
 import { PassByServiceComponent } from './components/component-interaction/pass-by-service/pass-by-service.component';
 import { AstronautComponent } from './components/component-interaction/pass-by-service/astronaut/astronaut.component';
 import { ComponentStylesComponent } from './components/component-styles/component-styles.component';
+import { ContentProjectionComponent } from './components/content-projection/content-projection.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { ComponentStylesComponent } from './components/component-styles/componen
     PassByServiceComponent,
     AstronautComponent,
     ComponentStylesComponent,
+    ContentProjectionComponent,
   ],
   imports: [
     BrowserModule,
