@@ -20,6 +20,7 @@ import { PassByLocalvarComponent } from './components/component-interaction/pass
 import { PassByViewchildComponent } from './components/component-interaction/pass-by-viewchild/pass-by-viewchild.component';
 import { PassByServiceComponent } from './components/component-interaction/pass-by-service/pass-by-service.component';
 import { AstronautComponent } from './components/component-interaction/pass-by-service/astronaut/astronaut.component';
+import { ComponentStylesComponent } from './components/component-styles/component-styles.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { AstronautComponent } from './components/component-interaction/pass-by-s
     PassByViewchildComponent,
     PassByServiceComponent,
     AstronautComponent,
+    ComponentStylesComponent,
   ],
   imports: [
     BrowserModule,
