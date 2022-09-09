@@ -1,3 +1,8 @@
 <h2>组件交互</h2>
 
-<app-pass-by-input [heros]="heros" [title]="title"></app-pass-by-input>
+<app-pass-by-input [title]="title1" [heroes]="heroes"></app-pass-by-input>
+
+<app-pass-by-setter
+  [title]="title2"
+  [name]="noNameHero.name"
+></app-pass-by-setter>

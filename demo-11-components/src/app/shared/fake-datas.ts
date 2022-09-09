@@ -1,7 +1,7 @@
-export const fakeHeros = [
+export const heroes = [
   { name: 'Tom', msg: 'Hi' },
   { name: 'Tony', msg: 'Hello' },
   { name: 'Petter', msg: 'Halo' },
 ];
 
-export const fakeTitle = 'pass by input';
+export const noNameHero = { name: '', msg: 'hahahaha' };

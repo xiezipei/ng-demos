@@ -7,7 +7,7 @@ import { Hero } from 'src/app/shared/types';
   styleUrls: ['./pass-by-input.component.scss'],
 })
 export class PassByInputComponent implements OnInit {
-  @Input() heros: Hero[] = [];
+  @Input() heroes: Hero[] = [];
   @Input('title') titleName = ''; // 别名“title”
 
   constructor() {}
