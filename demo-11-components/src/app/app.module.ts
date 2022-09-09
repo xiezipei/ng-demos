@@ -14,9 +14,10 @@ import { ShadowDomEncapsulationComponent } from './components/view-encapsulation
 import { ComponentInteractionComponent } from './components/component-interaction/component-interaction.component';
 import { PassByInputComponent } from './components/component-interaction/pass-by-input/pass-by-input.component';
 import { PassBySetterComponent } from './components/component-interaction/pass-by-setter/pass-by-setter.component';
+import { PassByNgonchangesComponent } from './components/component-interaction/pass-by-ngonchanges/pass-by-ngonchanges.component';
 
 @NgModule({
-  declarations: [AppComponent, LifecycleHooksComponent, LifecycleHooksParentComponent, ViewEncapsulationComponent, NoEncapsulationComponent, EmulatedEncapsulationComponent, ShadowDomEncapsulationComponent, ComponentInteractionComponent, PassByInputComponent, PassBySetterComponent],
+  declarations: [AppComponent, LifecycleHooksComponent, LifecycleHooksParentComponent, ViewEncapsulationComponent, NoEncapsulationComponent, EmulatedEncapsulationComponent, ShadowDomEncapsulationComponent, ComponentInteractionComponent, PassByInputComponent, PassBySetterComponent, PassByNgonchangesComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
