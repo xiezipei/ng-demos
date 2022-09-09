@@ -47,6 +47,8 @@ export class ComponentInteractionComponent implements OnInit, AfterViewInit {
     this.passByLocalvarComponent.stop();
   }
 
+  title7: string = '父组件和子组件通过 `service` 来通讯';
+
   constructor() {}
 
   ngOnInit(): void {}

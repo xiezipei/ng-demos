@@ -19,9 +19,27 @@ import { PassByEmitsComponent } from './components/component-interaction/pass-by
 import { PassByLocalvarComponent } from './components/component-interaction/pass-by-localvar/pass-by-localvar.component';
 import { PassByViewchildComponent } from './components/component-interaction/pass-by-viewchild/pass-by-viewchild.component';
 import { PassByServiceComponent } from './components/component-interaction/pass-by-service/pass-by-service.component';
+import { AstronautComponent } from './components/component-interaction/pass-by-service/astronaut/astronaut.component';
 
 @NgModule({
-  declarations: [AppComponent, LifecycleHooksComponent, LifecycleHooksParentComponent, ViewEncapsulationComponent, NoEncapsulationComponent, EmulatedEncapsulationComponent, ShadowDomEncapsulationComponent, ComponentInteractionComponent, PassByInputComponent, PassBySetterComponent, PassByNgonchangesComponent, PassByEmitsComponent, PassByLocalvarComponent, PassByViewchildComponent, PassByServiceComponent],
+  declarations: [
+    AppComponent,
+    LifecycleHooksComponent,
+    LifecycleHooksParentComponent,
+    ViewEncapsulationComponent,
+    NoEncapsulationComponent,
+    EmulatedEncapsulationComponent,
+    ShadowDomEncapsulationComponent,
+    ComponentInteractionComponent,
+    PassByInputComponent,
+    PassBySetterComponent,
+    PassByNgonchangesComponent,
+    PassByEmitsComponent,
+    PassByLocalvarComponent,
+    PassByViewchildComponent,
+    PassByServiceComponent,
+    AstronautComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
