@@ -33,3 +33,11 @@
 <button type="button" (click)="timer.start()">Start</button>
 <button type="button" (click)="timer.stop()">Stop</button>
 <app-pass-by-localvar #timer></app-pass-by-localvar>
+
+<!-- 示例-6 -->
+<h3>{{ title6 }}</h3>
+<!-- <app-pass-by-viewchild></app-pass-by-viewchild> -->
+<button type="button" (click)="startV()">Start</button>
+<button type="button" (click)="stopV()">Stop</button>
+<div class="seconds">{{ secondsV() }}</div>
+<app-pass-by-localvar #timer></app-pass-by-localvar>

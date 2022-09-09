@@ -1,13 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { heroes, noNameHero } from 'src/app/shared/datas';
 import { Hero } from 'src/app/shared/types';
+import { PassByLocalvarComponent } from './pass-by-localvar/pass-by-localvar.component';
 
 @Component({
   selector: 'app-component-interaction',
   templateUrl: './component-interaction.component.html',
   styleUrls: ['./component-interaction.component.scss'],
 })
-export class ComponentInteractionComponent implements OnInit {
+export class ComponentInteractionComponent implements OnInit, AfterViewInit {
   title1: string = '通过 `@Input()` 把数据从父组件传到子组件';
   heroes: Hero[] = heroes;
 
@@ -23,6 +24,28 @@ export class ComponentInteractionComponent implements OnInit {
   disagreed = 0;
 
   title5: string = '父组件与子组件通过本地变量互动';
+
+  title6: string = '父级调用 `@ViewChild()`';
+  @ViewChild(PassByLocalvarComponent)
+  private passByLocalvarComponent!: PassByLocalvarComponent;
+  secondsV() {
+    return 0;
+  }
+  ngAfterViewInit(): void {
+    // Redefine `seconds()` to get from the `CountdownTimerComponent.seconds` ...
+    // but wait a tick first to avoid one-time devMode
+    // unidirectional-data-flow-violation error
+    setTimeout(
+      () => (this.secondsV = () => this.passByLocalvarComponent.seconds),
+      0
+    );
+  }
+  startV() {
+    this.passByLocalvarComponent.start();
+  }
+  stopV() {
+    this.passByLocalvarComponent.stop();
+  }
 
   constructor() {}
 
