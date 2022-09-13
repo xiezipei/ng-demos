@@ -22,6 +22,9 @@ import { PassByServiceComponent } from './components/component-interaction/pass-
 import { AstronautComponent } from './components/component-interaction/pass-by-service/astronaut/astronaut.component';
 import { ComponentStylesComponent } from './components/component-styles/component-styles.component';
 import { ContentProjectionComponent } from './components/content-projection/content-projection.component';
+import { BasicProjectionComponent } from './components/content-projection/basic-projection/basic-projection.component';
+import { MultiSlotProjectionComponent } from './components/content-projection/multi-slot-projection/multi-slot-projection.component';
+import { ConditionalProjectionComponent } from './components/content-projection/conditional-projection/conditional-projection.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +46,9 @@ import { ContentProjectionComponent } from './components/content-projection/cont
     AstronautComponent,
     ComponentStylesComponent,
     ContentProjectionComponent,
+    BasicProjectionComponent,
+    MultiSlotProjectionComponent,
+    ConditionalProjectionComponent,
   ],
   imports: [
     BrowserModule,
