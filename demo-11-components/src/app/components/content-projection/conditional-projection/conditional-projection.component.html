@@ -1,1 +1,5 @@
-<p>conditional-projection works!</p>
+<h2>有条件的投影</h2>
+<ng-content></ng-content>
+<div *ngIf="expanded" [id]="contentId">
+  <ng-container [ngTemplateOutlet]="content.templateRef"></ng-container>
+</div>

@@ -24,7 +24,11 @@ import { ComponentStylesComponent } from './components/component-styles/componen
 import { ContentProjectionComponent } from './components/content-projection/content-projection.component';
 import { BasicProjectionComponent } from './components/content-projection/basic-projection/basic-projection.component';
 import { MultiSlotProjectionComponent } from './components/content-projection/multi-slot-projection/multi-slot-projection.component';
-import { ConditionalProjectionComponent } from './components/content-projection/conditional-projection/conditional-projection.component';
+import {
+  ConditionalProjectionComponent,
+  ZippyContentDirective,
+  ZippyToggleDirective,
+} from './components/content-projection/conditional-projection/conditional-projection.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +53,8 @@ import { ConditionalProjectionComponent } from './components/content-projection/
     BasicProjectionComponent,
     MultiSlotProjectionComponent,
     ConditionalProjectionComponent,
+    ZippyToggleDirective,
+    ZippyContentDirective,
   ],
   imports: [
     BrowserModule,
