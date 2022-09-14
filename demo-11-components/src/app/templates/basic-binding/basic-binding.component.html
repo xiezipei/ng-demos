@@ -25,3 +25,15 @@
     {{ actionName }} with Aria
   </button>
 </div>
+
+<hr />
+
+<h2>样式绑定</h2>
+
+<h3>Source specificity</h3>
+
+<!-- The `class.special` binding overrides any value for the `special` class in `classExpression`.  -->
+<div [class.special]="isSpecial" [class]="classExpression">Some text.</div>
+
+<!-- The `style.border` binding overrides any value for the `border` property in `styleExpression`.  -->
+<div [style.border]="border" [style]="styleExpression">Some text.</div>
