@@ -1,0 +1,11 @@
+<h2>管道示例</h2>
+
+<h3>基本用法</h3>
+<p>The hero's birthday is {{ birthday | date: "MM/dd/yy" }}</p>
+
+<h3>动态改变</h3>
+<p>The hero's birthday is {{ birthday | date: format }}</p>
+<button type="button" (click)="toggleFormat()">Toggle Format</button>
+
+<h3>串联管道</h3>
+<p>The chained hero's birthday is {{ birthday | date | uppercase }}</p>
