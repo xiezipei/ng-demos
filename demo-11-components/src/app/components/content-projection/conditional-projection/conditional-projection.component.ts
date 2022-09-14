@@ -8,6 +8,9 @@ import {
   TemplateRef,
 } from '@angular/core';
 
+/**
+ * 指令 - 切换显示
+ */
 @Directive({
   selector: 'button[appExampleZippyToggle]',
 })
@@ -20,6 +23,9 @@ export class ZippyToggleDirective {
   constructor(public zippy: ConditionalProjectionComponent) {}
 }
 
+/**
+ * 指令 - 内容
+ */
 @Directive({
   selector: '[appExampleZippyContent]',
 })
@@ -29,6 +35,9 @@ export class ZippyContentDirective {
 
 let nextId = 0;
 
+/**
+ * 组件 - 条件投影
+ */
 @Component({
   selector: 'app-conditional-projection',
   templateUrl: './conditional-projection.component.html',
