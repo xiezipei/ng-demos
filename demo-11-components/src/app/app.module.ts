@@ -40,7 +40,7 @@ import { PopupComponent } from './components/custom-elements/popup.component';
 import { BasicBindingComponent } from './templates/basic-binding/basic-binding.component';
 import { CompWithHostBindingComponent } from './templates/basic-binding/comp-with-host-binding.component';
 import { MyInputWithAttributeDecoratorComponent } from './templates/basic-binding/my-input-with-attribute-decorator.component';
-import { PipesSampleComponent } from './pipes/pipes-sample/pipes-sample.component';
+import { PipesSampleComponent } from './templates/pipes-sample/pipes-sample.component';
 
 @NgModule({
   declarations: [
