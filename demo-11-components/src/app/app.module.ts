@@ -37,6 +37,7 @@ import { AdService } from './components/dynamic-component-loader/ad.service';
 import { AdDirective } from './components/dynamic-component-loader/ad-banner/ad.directive';
 import { CustomElementsComponent } from './components/custom-elements/custom-elements.component';
 import { PopupComponent } from './components/custom-elements/popup.component';
+import { BasicBindingComponent } from './templates/basic-binding/basic-binding.component';
 
 @NgModule({
   declarations: [
@@ -69,6 +70,7 @@ import { PopupComponent } from './components/custom-elements/popup.component';
     AdDirective,
     CustomElementsComponent,
     PopupComponent,
+    BasicBindingComponent,
   ],
   imports: [
     BrowserModule,
