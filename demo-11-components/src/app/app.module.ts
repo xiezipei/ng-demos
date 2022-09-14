@@ -34,6 +34,7 @@ import { DynamicComponentLoaderComponent } from './components/dynamic-component-
 import { AdBannerComponent } from './components/dynamic-component-loader/ad-banner/ad-banner.component';
 import { AdService } from './components/dynamic-component-loader/ad.service';
 import { AdDirective } from './components/dynamic-component-loader/ad-banner/ad.directive';
+import { CustomElementsComponent } from './components/custom-elements/custom-elements.component';
 
 @NgModule({
   declarations: [
@@ -64,6 +65,7 @@ import { AdDirective } from './components/dynamic-component-loader/ad-banner/ad.
     AdBannerComponent,
     DynamicComponentLoaderComponent,
     AdDirective,
+    CustomElementsComponent,
   ],
   imports: [
     BrowserModule,
