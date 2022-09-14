@@ -36,6 +36,7 @@ let nextId = 0;
 })
 export class ConditionalProjectionComponent {
   contentId = `zippy-${nextId++}`;
+  // 输入属性
   @Input() expanded = false;
   @ContentChild(ZippyContentDirective) content!: ZippyContentDirective;
 }
