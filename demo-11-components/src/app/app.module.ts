@@ -41,6 +41,7 @@ import { BasicBindingComponent } from './templates/basic-binding/basic-binding.c
 import { CompWithHostBindingComponent } from './templates/basic-binding/comp-with-host-binding.component';
 import { MyInputWithAttributeDecoratorComponent } from './templates/basic-binding/my-input-with-attribute-decorator.component';
 import { PipesSampleComponent } from './templates/pipes-sample/pipes-sample.component';
+import { SvgTemplateComponent } from './templates/svg-template/svg-template.component';
 
 @NgModule({
   declarations: [
@@ -77,6 +78,7 @@ import { PipesSampleComponent } from './templates/pipes-sample/pipes-sample.comp
     CompWithHostBindingComponent,
     MyInputWithAttributeDecoratorComponent,
     PipesSampleComponent,
+    SvgTemplateComponent,
   ],
   imports: [
     BrowserModule,
