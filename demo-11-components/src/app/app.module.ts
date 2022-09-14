@@ -38,6 +38,8 @@ import { AdDirective } from './components/dynamic-component-loader/ad-banner/ad.
 import { CustomElementsComponent } from './components/custom-elements/custom-elements.component';
 import { PopupComponent } from './components/custom-elements/popup.component';
 import { BasicBindingComponent } from './templates/basic-binding/basic-binding.component';
+import { CompWithHostBindingComponent } from './templates/basic-binding/comp-with-host-binding.component';
+import { MyInputWithAttributeDecoratorComponent } from './templates/basic-binding/my-input-with-attribute-decorator.component';
 
 @NgModule({
   declarations: [
@@ -71,6 +73,8 @@ import { BasicBindingComponent } from './templates/basic-binding/basic-binding.c
     CustomElementsComponent,
     PopupComponent,
     BasicBindingComponent,
+    CompWithHostBindingComponent,
+    MyInputWithAttributeDecoratorComponent,
   ],
   imports: [
     BrowserModule,

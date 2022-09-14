@@ -30,6 +30,7 @@
 
 <h2>样式绑定</h2>
 
+<hr />
 <h3>Source specificity</h3>
 
 <!-- The `class.special` binding overrides any value for the `special` class in `classExpression`.  -->
@@ -37,3 +38,42 @@
 
 <!-- The `style.border` binding overrides any value for the `border` property in `styleExpression`.  -->
 <div [style.border]="border" [style]="styleExpression">Some text.</div>
+
+<hr />
+<h3>Source specificity</h3>
+
+<!-- The `class.special` template binding overrides any host binding to the `special` class set by `dirWithClassBinding` or `comp-with-host-binding`.-->
+
+<comp-with-host-binding
+  [class.special]="isSpecial"
+  dirWithClassBinding
+></comp-with-host-binding>
+
+<!-- The `style.color` template binding overrides any host binding to the `color` property set by `dirWithStyleBinding` or `comp-with-host-binding`. -->
+<div>
+  <comp-with-host-binding
+    [style.color]="color"
+    dirWithStyleBinding
+  ></comp-with-host-binding>
+</div>
+
+<hr />
+<h3>Dynamic vs static</h3>
+
+<!-- If `classExpression` has a value for the `special` class, this value overrides the `class="special"` below -->
+<!-- [class]覆盖标签class属性 -->
+<div class="special" [class]="classExpression">Some text.</div>
+
+<!-- If `styleExpression` has a value for the `border` property, this value overrides the `style="border: dotted darkblue 3px"` below -->
+<!-- 动态style覆盖了标签style属性 -->
+<div style="border: dotted darkblue 3px" [style]="styleExpression">
+  Some text.
+</div>
+
+<div class="readability">
+  <comp-with-host-binding dirWithHostBinding></comp-with-host-binding>
+</div>
+
+<app-my-input-with-attribute-decorator
+  type="number"
+></app-my-input-with-attribute-decorator>
