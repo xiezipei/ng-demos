@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@angular-devkit/build-angular': ^14.1.2
-  '@angular/animations': ^14.1.0
+  '@angular/animations': ^14.2.0
   '@angular/cli': ~14.1.2
   '@angular/common': ^14.1.0
   '@angular/compiler': ^14.1.0

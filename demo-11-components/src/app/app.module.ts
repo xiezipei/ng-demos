@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -35,6 +36,7 @@ import { AdBannerComponent } from './components/dynamic-component-loader/ad-bann
 import { AdService } from './components/dynamic-component-loader/ad.service';
 import { AdDirective } from './components/dynamic-component-loader/ad-banner/ad.directive';
 import { CustomElementsComponent } from './components/custom-elements/custom-elements.component';
+import { PopupComponent } from './components/custom-elements/popup.component';
 
 @NgModule({
   declarations: [
@@ -66,6 +68,7 @@ import { CustomElementsComponent } from './components/custom-elements/custom-ele
     DynamicComponentLoaderComponent,
     AdDirective,
     CustomElementsComponent,
+    PopupComponent,
   ],
   imports: [
     BrowserModule,
@@ -73,6 +76,7 @@ import { CustomElementsComponent } from './components/custom-elements/custom-ele
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
+    BrowserAnimationsModule,
   ],
   providers: [AdService],
   bootstrap: [AppComponent],
