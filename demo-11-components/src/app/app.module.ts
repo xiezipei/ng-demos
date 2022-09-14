@@ -31,6 +31,9 @@ import {
 } from './components/content-projection/conditional-projection/conditional-projection.component';
 import { NgasProjectionComponent } from './components/content-projection/ngas-projection/ngas-projection.component';
 import { DynamicComponentLoaderComponent } from './components/dynamic-component-loader/dynamic-component-loader.component';
+import { AdBannerComponent } from './components/dynamic-component-loader/ad-banner/ad-banner.component';
+import { AdService } from './components/dynamic-component-loader/ad.service';
+import { AdDirective } from './components/dynamic-component-loader/ad-banner/ad.directive';
 
 @NgModule({
   declarations: [
@@ -58,7 +61,9 @@ import { DynamicComponentLoaderComponent } from './components/dynamic-component-
     ZippyToggleDirective,
     ZippyContentDirective,
     NgasProjectionComponent,
+    AdBannerComponent,
     DynamicComponentLoaderComponent,
+    AdDirective,
   ],
   imports: [
     BrowserModule,
@@ -67,7 +72,7 @@ import { DynamicComponentLoaderComponent } from './components/dynamic-component-
     FormsModule,
     ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [AdService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
