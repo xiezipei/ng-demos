@@ -30,6 +30,7 @@ import {
   ZippyToggleDirective,
 } from './components/content-projection/conditional-projection/conditional-projection.component';
 import { NgasProjectionComponent } from './components/content-projection/ngas-projection/ngas-projection.component';
+import { DynamicComponentLoaderComponent } from './components/dynamic-component-loader/dynamic-component-loader.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +58,7 @@ import { NgasProjectionComponent } from './components/content-projection/ngas-pr
     ZippyToggleDirective,
     ZippyContentDirective,
     NgasProjectionComponent,
+    DynamicComponentLoaderComponent,
   ],
   imports: [
     BrowserModule,
